@@ -7,6 +7,7 @@ const Todo = () => {
     return savedTodoList ? JSON.parse(savedTodoList) : [];
   });
 
+
   // const [todoList, setTodoList] = useState(storedTodoList);
 
   // Update local storage whenever TODOs change
@@ -48,11 +49,6 @@ const Todo = () => {
         return todo;
       }
     });
-
-    // let todoName = event.target.value;
-    
-    
-
     // Update the state with the modified todoList
     setTodoList(updatedTodoList);
   };
